@@ -7,7 +7,7 @@ Predictive modelling and time series analysis of NVIDIA (NVDA) daily stock retur
 ## Project Structure
 
 ```
-├── main2.ipynb        # Main analysis notebook
+├── nvda-time-series-analysis.ipynb        # Main analysis notebook
 ├── data/
 │   └── nvda_raw.csv   # Saved dataset (auto-generated on first run)
 └── README.md
@@ -114,14 +114,15 @@ All models explain less than 2% of next-day return variance. This is consistent 
 ## Dependencies
 
 ```
-yfinance
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-statsmodels
-scipy
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+seaborn==0.13.2
+scipy==1.13.1
+statsmodels==0.14.2
+scikit-learn==1.4.2
+yfinance==0.2.38
+jupyter==1.0.0
 ```
 
 Install with:
@@ -133,5 +134,14 @@ pip install yfinance pandas numpy matplotlib seaborn scikit-learn statsmodels sc
 ---
 
 ## Reproducibility
+```bash
+# 1. Clone the repo
+git clone https://github.com/AssylbekO/NVIDIA-Stock-Return-Analysis.git
 
-The notebook uses a fixed random seed (`SEED = 42`) throughout. The dataset is saved locally on first run to `data/nvda_raw.csv`, ensuring all subsequent runs use identical input data regardless of yfinance updates.
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the notebook
+# On first run, data is downloaded automatically from Yahoo Finance and saved to data/nvda_raw.csv
+jupyter notebook main.ipynb
+```
