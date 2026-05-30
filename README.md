@@ -2,6 +2,8 @@
 
 Predictive modelling and time series analysis of NVIDIA (NVDA) daily stock returns using machine learning regression models and ARIMA, covering the period January 2021 to March 2026.
 
+>View the rendered Notebook here: https://nbviewer.org/github/AssylbekO/NVIDIA-Stock-Return-Analysis/blob/main/src/nvda-time-series-analysis.ipynb
+
 ---
 
 ## Project Structure
